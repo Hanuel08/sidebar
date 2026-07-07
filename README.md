@@ -1,16 +1,36 @@
-# React + Vite
+# Sidebar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dashboard con sidebar dinámico construido con React, Vite y Tailwind CSS v4.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19**
+- **Vite 8**
+- **Tailwind CSS v4**
+- **react-router-dom v7**
+- **@tabler/icons-react**
 
-## React Compiler
+## Scripts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+pnpm dev       # desarrollo
+pnpm build     # build producción
+pnpm preview   # previsualizar build
+pnpm lint      # lint
+```
 
-## Expanding the ESLint configuration
+## Estructura
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/     # Sidebar, SidebarItem, UserBar
+├── data/           # sidebarData, userData
+├── pages/          # páginas del dashboard
+├── const/          # constantes
+├── App.jsx         # rutas y layout
+└── main.jsx        # entry point
+```
+
+## Sidebar
+
+El sidebar tiene dos modos: `expanded` (texto + íconos) e `icon` (solo íconos). Los datos se configuran desde `src/data/sidebarData.jsx`. Incluye un UserBar al final con menú desplegable configurable desde `src/data/userData.jsx`.
