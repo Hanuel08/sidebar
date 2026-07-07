@@ -1,6 +1,10 @@
 # Sidebar
 
-Dashboard con sidebar dinámico construido con React, Vite y Tailwind CSS v4.
+Sidebar dinámico construido con React, Vite y Tailwind CSS v4.
+
+![expanded sidebar](/public/assets/img/expanded-sidebar.png)
+
+![collapsed sidebar](/public/assets/img/collapsed-sidebar.png)
 
 ## Stack
 
